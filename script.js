@@ -86,7 +86,7 @@ function clearCart() {
   renderCart();
 }
 function updateCartInSessionStorage() {
-  sessionStorage.setItem("cartItems", cartItems);
+  sessionStorage.setItem("cartItems", JSON.stringify(cartItems));
 }
 function getCartFromSessionStorage() {
   const cartData = sessionStorage.getItem("cartItems");
